@@ -30,7 +30,16 @@ footer {
     max-width: 900px;
 }
 
+.title-group {
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 600px) {
+    .title-group {
+
+        margin: 0;
+    }
+
     .contact-content {
         flex-direction: column;
         gap: 30px;
@@ -85,7 +94,6 @@ main {
 h1 {
     font-family: "Rampart One", sans-serif;
     font-size: clamp(26px, 9vw, 36px);
-    text-align: center;
     line-height: 1.2;
     margin-top: 0px;
     margin-bottom: 25px;
@@ -158,4 +166,16 @@ ol {
 
 li {
     margin-bottom: 15px;
+}
+
+.tx-center {
+    text-align: center;
+}
+
+.tx-left {
+    text-align: left;
+}
+
+.tx-right {
+    text-align: right;
 }
