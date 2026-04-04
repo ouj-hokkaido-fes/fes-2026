@@ -1,0 +1,25 @@
+---
+// Section.astro
+const { title, date, lineHeight = "1.5" } = Astro.props;
+import "../styles/news.css";
+---
+
+<section>
+    <div class="news-container">
+        <div class="news-date">{date}</div>
+        <div class="news-title">{title}</div>
+
+        <div class="news-content">
+            <slot />
+        </div>
+    </div>
+</section>
+
+<style define:vars={{ lineHeight }}>
+    .news-content {
+        line-height: var(--lineHeight) !important;
+    }
+    :global(.news-content p) {
+        line-height: var(--lineHeight) !important;
+    }
+</style>

@@ -1,0 +1,27 @@
+---
+import "../styles/news.css";
+---
+
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+        <title>放送大学 文化祭 ニュース</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kosugi+Maru&family=Mochiy+Pop+One&family=Rampart+One&family=Truculenta:opsz,wght@12..72,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Overpass+Mono:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <slot />
+        </main>
+    </body>
+</html>
