@@ -136,6 +136,10 @@ a {
     padding-bottom: 2px;
 }
 
+a .no-underline {
+    border-bottom: none;
+}
+
 
 strong {
     font-weight: bold;

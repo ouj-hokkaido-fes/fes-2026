@@ -6,4 +6,8 @@ export default defineConfig({
   base: '/',
   outDir: './docs',
   integrations: [mdx()],
+  markdown: {
+               remarkPlugins: ['remark-breaks'], 
+               extendDefaultPlugins: true,
+         },
 });
